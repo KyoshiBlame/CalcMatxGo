@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Калькулятор матриц</title>
+    <link rel="stylesheet" href="src/styles.css" />
+  </head>
+  <body>
+    <main class="layout">
+      <aside class="sidebar">
+        <div id="operation-menu" class="menu"></div>
+      </aside>
+
+      <section class="workspace">
+        <h1>Калькулятор матриц</h1>
+        <div class="input-grid">
+          <label>
+            Матрица A
+            <textarea id="matrix-a" rows="6">1 2 3
+0 1 4
+5 6 0</textarea>
+          </label>
+
+          <label>
+            Матрица B (для выражений)
+            <textarea id="matrix-b" rows="6">1 0 0
+0 1 0
+0 0 1</textarea>
+          </label>
+        </div>
+
+        <div id="dynamic-controls" class="controls"></div>
+
+        <button id="run-operation" class="run-btn">Вычислить</button>
+
+        <div class="output">
+          <h2>Результат</h2>
+          <pre id="result"></pre>
+          <p id="error" class="error"></p>
+        </div>
+      </section>
+    </main>
+
+    <script type="module" src="src/app.js"></script>
+  </body>
+</html>
